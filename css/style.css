@@ -1,0 +1,344 @@
+/* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
+
+html {
+    scroll-padding-top: 100px;
+}
+
+
+
+/* ==========HEADER============= */
+/* ==========LOGO============= */
+/* ==========NAVIGATION============= */
+
+
+nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    overflow: hidden;
+    z-index: 100;
+    
+}
+nav a {
+    width: 70px;
+    padding: 5px 15px; /* to align with logo */
+    display: block;
+    color: black;
+    background: white;
+    text-decoration: none;
+    font-size: 20px; 
+    text-align: center;
+    margin-right: 5px;
+    
+}
+
+nav a:hover {
+    color: #9B4E14;
+}
+
+nav img {
+    width: 120%;
+    height: 120%;
+}
+ul {
+    padding: 0;
+    margin: 0 0 0 15px;
+    list-style: none;
+}
+li{
+    float: left;
+   
+}
+
+
+/* ==========MAIN BODY CONTENT============= */
+
+body { 
+    margin: 0; /* removes little margin around entire body of site that is there by default */
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1vw;   
+    box-sizing: border-box;
+}
+div {
+    margin: 15px;
+}
+
+h1 {
+    margin: 15px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 30px;
+    margin-left: 30px;
+}
+p { 
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+/* ==========SECTION 1 STYLING============= */
+/*#about-div{
+    background-image: url("../images/mb1_5.jpg");
+   
+    background-repeat: no-repeat;
+
+    background-size: 100% 100%;
+    background-position: center;
+    
+   
+   opacity: 0.5;
+
+    
+    
+}
+   */
+
+#about-div {
+    position: relative; 
+    height: 45vh;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+#about-div::before{
+    content: "";
+    background-image: url("../images/mb1_5.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    
+
+}
+
+#about-h2 {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    text-align: center;
+    height: 40px;
+    
+    /* border: 3px solid #73AD21; */
+    color: black;
+    opacity: 1;
+}
+
+#about-p {
+    max-width: 800px;
+    margin: 0 auto;
+    /* border: 3px solid #73AD21; */
+    padding-bottom: 50px;
+    font-size: 16px;
+    color: black;
+    opacity: 1;
+} 
+
+#about-p p{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #9B4E14;
+}
+
+
+/* ==========SECTION 2 STYLING============= */
+
+.block {
+    display: inline-block; /* One long line block in horizontal */
+    height: 150px;
+    width: 150px;
+}
+
+#gallery h2{
+    margin-top: 30px;
+}
+
+.block img {
+    height: 100%;
+    width: 100%;
+}
+#gallery-div {
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap; /* This will let the division wrap around each other in responsive screen. */
+                     /* Otherwise, we are not able to see right half of the screen when the screen size is small. */
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+}
+
+.block {
+    width:300px;
+    height:200px;
+    font-size: 30px;
+    line-height: 200px; /* setting the line height of text to be the same height as the element itself, vertically centers that text */   
+    /* border: solid #1c1c1c 5px;  */
+    margin: 15px;
+    
+}
+
+
+/* ==========SECTION 3 STYLING============= */
+
+#packages {
+    
+    padding: 2px 1px;
+    background-color: #958B79;
+}
+
+
+
+.package {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px 0 auto ; /*top right bottom left*/
+    max-width: 300px;
+    border-radius: 20px;
+    font-size: 18px;
+   
+}
+.package-price {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 auto 0 10px ; /*top right bottom left*/
+    max-width: 100px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+
+.main-div {
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.left-div {
+    display: inline-block;
+    border: 3px solid red;
+    width: 45%;
+}
+.right-div {
+    display: inline-block;
+    border: 3px solid red;
+    width: 45%;
+}
+
+
+
+/* ==========FOOTER STYLIING============= */
+
+
+
+
+/* ==========RESPONSIVE DESIGN============= */
+
+/* ===== 5K RETINA MAC LABS: Media queries for Curtin Uni mac lab testing only ===== */
+@media only screen and (max-width: 5120px) {
+   
+}
+        
+
+
+/* ===== DESKTOP HD: Media queries for most HD desktops ===== */
+@media only screen and (max-width: 1920px) {
+   
+    
+    
+}
+
+/* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
+@media only screen and (max-width: 1366px) { 
+
+    #gallery-div {
+        width: 750px;
+    }
+    
+    
+}
+
+/* ===== TABLET: Media queries for verticle and horizontal ===== */
+@media only screen and (max-width: 1024px) { 
+    #about-div {
+        position: relative; 
+        height: 50vh;
+    }
+    #about-p {
+        max-width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) { 
+ 
+    #about-div {
+        position: relative; 
+        height: 60vh;
+    }
+    #about-p {
+        max-width: 500px;
+        
+    }
+    #gallery-div {
+        width: 350px;  
+    }
+    #gallery {
+        
+        margin-right: 35px;   
+    }
+    
+
+    .left-div {
+        display: inline-block;
+        width: 30%;
+    }
+    .right-div {
+        display: inline-block;
+        width: 30%;
+    }
+    
+
+}
+
+/* ===== MOBILE: Media queries for small mobile resolution. ===== */
+@media only screen and (max-width: 640px) { 
+    nav img {
+        height: 130%;
+        width: 130%;
+    }
+    nav a {
+        width: 60px;
+        padding: 5px 5px; /* to align with logo */
+        font-size: 18px; 
+        margin-right: 15px;
+        
+    }
+   
+    
+
+        
+}
+
+
+@media only screen and (max-width: 360px) { 
+
+            
+        
+}
+
