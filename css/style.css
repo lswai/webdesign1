@@ -231,12 +231,10 @@ p {
 }
 .left-div {
     display: inline-block;
-    border: 3px solid red;
     width: 45%;
 }
 .right-div {
     display: inline-block;
-    border: 3px solid red;
     width: 45%;
 }
 
