@@ -1,5 +1,5 @@
 /* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
-
+/* Adds padding for smooth scrolling to account for a fixed header. */
 html {
     scroll-padding-top: 100px;
 }
@@ -10,7 +10,7 @@ html {
 /* ==========LOGO============= */
 /* ==========NAVIGATION============= */
 
-
+/* Makes the navigation bar sticky, ensuring it stays at the top while scrolling. */
 nav {
     position: sticky;
     top: 0;
@@ -19,6 +19,7 @@ nav {
     z-index: 100;
     
 }
+/* Styles navigation links with padding, color, and font settings. */
 nav a {
     width: 70px;
     padding: 5px 15px; /* to align with logo */
@@ -31,20 +32,23 @@ nav a {
     margin-right: 5px;
     
 }
-
+/* Changes link color when hovered over for better user interaction. */
 nav a:hover {
     color: #9B4E14;
 }
 
+/* Resizes the navigation logo. */
 nav img {
     width: 120%;
     height: 120%;
 }
+/* Removes padding and margin from the unordered list and hides bullet points. */
 ul {
     padding: 0;
     margin: 0 0 0 15px;
     list-style: none;
 }
+/* Displays list items in a horizontal row. */
 li{
     float: left;
    
@@ -52,17 +56,19 @@ li{
 
 
 /* ==========MAIN BODY CONTENT============= */
-
+/* Resets default body margins and sets universal font styles. */
 body { 
     margin: 0; /* removes little margin around entire body of site that is there by default */
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 1vw;   
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding and borders are included in element width/height. */
+
 }
+/* Adds consistent spacing for all div elements. */
 div {
     margin: 15px;
 }
-
+/* Sets consistent styles for headings. */
 h1 {
     margin: 15px;
     font-size: 30px;
@@ -74,7 +80,7 @@ h2 {
 p { 
     margin-left: 20px;
     font-size: 15px;
-    text-align: justify;
+    text-align: justify;/* Aligns text evenly for a clean look. */
 }
 
 
@@ -94,7 +100,7 @@ p {
     
 }
    */
-
+/* Styles the "About" section with a background image and adjusts dimensions. */
 #about-div {
     position: relative; 
     height: 45vh;
@@ -103,6 +109,8 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/* Adds a semi-transparent background image overlay. */
 #about-div::before{
     content: "";
     background-image: url("../images/mb1_5.jpg");
@@ -116,7 +124,7 @@ p {
     
 
 }
-
+/* Styles the "About" section header text. */
 #about-h2 {
     margin: 0;
     width: 100%;
@@ -125,12 +133,11 @@ p {
     padding-bottom: 40px;
     text-align: center;
     height: 40px;
-    
-    /* border: 3px solid #73AD21; */
     color: black;
     opacity: 1;
 }
 
+/* Centers and limits the paragraph width in the "About" section. */
 #about-p {
     max-width: 800px;
     margin: 0 auto;
@@ -141,6 +148,7 @@ p {
     opacity: 1;
 } 
 
+/* Changes text color for nested paragraphs within the "About" section. */
 #about-p p{
     margin-left: 20px;
     margin-right: 20px;
@@ -149,12 +157,13 @@ p {
 
 
 /* ==========SECTION 2 STYLING============= */
-
+/* Styles gallery blocks to be inline and of uniform size. */
 .block {
     display: inline-block; /* One long line block in horizontal */
     height: 150px;
     width: 150px;
 }
+
 
 #gallery h2{
     margin-top: 30px;
@@ -164,6 +173,8 @@ p {
     height: 100%;
     width: 100%;
 }
+
+/* Centers and wraps gallery items responsively. */
 #gallery-div {
     justify-items: center;
     justify-content: center;
@@ -177,6 +188,7 @@ p {
     flex-direction: row;
 }
 
+/* Adds consistent spacing and size to gallery items. */
 .block {
     width:300px;
     height:200px;
@@ -189,7 +201,7 @@ p {
 
 
 /* ==========SECTION 3 STYLING============= */
-
+/* Styles the "Popular Packages" section background. */
 #packages {
     
     padding: 2px 1px;
@@ -197,7 +209,7 @@ p {
 }
 
 
-
+/* Styles individual packages with rounded corners and centered content. */
 .package {
     display: flex;
     justify-content: center;
@@ -210,6 +222,7 @@ p {
     font-size: 18px;
    
 }
+/* Styles individual packages with rounded corners and centered content. */
 .package-price {
     display: flex;
     justify-content: center;
@@ -239,12 +252,6 @@ p {
 }
 
 
-
-/* ==========FOOTER STYLIING============= */
-
-
-
-
 /* ==========RESPONSIVE DESIGN============= */
 
 /* ===== 5K RETINA MAC LABS: Media queries for Curtin Uni mac lab testing only ===== */
@@ -271,7 +278,7 @@ p {
     
 }
 
-/* ===== TABLET: Media queries for verticle and horizontal ===== */
+/* ===== TABLET: Media queries for tablet resolution. ===== */
 @media only screen and (max-width: 1024px) { 
     #about-div {
         position: relative; 
@@ -311,7 +318,6 @@ p {
         width: 30%;
     }
     
-
 }
 
 /* ===== MOBILE: Media queries for small mobile resolution. ===== */
@@ -326,17 +332,12 @@ p {
         font-size: 18px; 
         margin-right: 15px;
         
-    }
+    }  
    
-    
-
-        
 }
 
 
-@media only screen and (max-width: 360px) { 
+@media only screen and (max-width: 360px) {            
 
-            
-        
 }
 
